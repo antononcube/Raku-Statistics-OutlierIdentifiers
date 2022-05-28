@@ -1,0 +1,28 @@
+{
+  "name": "Statistics::OutlierIdentifiers",
+  "description": "Outlier identifiers for one dimensional data.",
+  "version": "0.1.0",
+  "perl": "6.d",
+  "authors": [
+    "Anton Antonov"
+  ],
+  "auth": "github:antononcube",
+  "depends": [
+    "Stats"
+  ],
+  "build-depends": [],
+  "test-depends": [],
+  "provides": {
+    "Data::ExampleDatasets": "lib/Statistics/OutlierIdentifiers.rakumod"
+  },
+  "resources": [],
+  "license": "Artistic-2.0",
+  "tags": [
+    "data",
+    "outlier",
+    "identifier",
+    "outlier identifier"
+  ],
+  "api": "1",
+  "source-url": "https://github.com/antononcube/Raku-Statistics-OutlierIdentifiers.git"
+}
