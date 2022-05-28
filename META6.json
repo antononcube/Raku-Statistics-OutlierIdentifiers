@@ -13,7 +13,7 @@
   "build-depends": [],
   "test-depends": [],
   "provides": {
-    "Data::ExampleDatasets": "lib/Statistics/OutlierIdentifiers.rakumod"
+    "Statistics::OutlierIdentifiers": "lib/Statistics/OutlierIdentifiers.rakumod"
   },
   "resources": [],
   "license": "Artistic-2.0",
