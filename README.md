@@ -9,7 +9,17 @@ If follows closely the Mathematica package [AAp1] and the R package [AAp3].
 
 ## Installation 
 
-*TBD...*
+From Raku.land:
+
+```shell
+zef install Statistics::OutlierIdentifiers
+```
+
+From GitHub:
+
+```shell
+zef install https://github.com/antononcube/Raku-Statistics-OutlierIdentifiers.git
+```
 
 ------
 
@@ -47,7 +57,7 @@ say outlier-identifier(@vec):values;
 # (34.660719020315 -62.06920928324861 26.94082690136212 37.086889685282394)
 ```
 
-Find **top** outlier positions and values:
+Find *top* outlier positions and values:
 
 ```perl6
 say outlier-identifier(@vec, identifier => (&top-outliers o &hampel-identifier-parameters));
@@ -58,7 +68,7 @@ say outlier-identifier(@vec, identifier => (&top-outliers o &hampel-identifier-p
 # (34.660719020315 26.94082690136212 37.086889685282394)
 ```
 
-Find **bottom** outlier positions and values (using quartiles-based identifier):
+Find *bottom* outlier positions and values (using quartiles-based identifier):
 
 ```perl6
 say outlier-identifier(@vec, identifier => (&bottom-outliers o &quartile-identifier-parameters));
@@ -87,3 +97,19 @@ The available outlier parameters functions are:
 ------
 
 ## References 
+
+[AA1] Anton Antonov,
+["Outlier detection in a list of numbers"](https://mathematicaforprediction.wordpress.com/2013/10/16/outlier-detection-in-a-list-of-numbers/),
+(2013),
+[MathematicaForPrediction at WordPress](https://mathematicaforprediction.wordpress.com).
+
+
+[AAp1] Anton Antonov,
+["Implementation of one dimensional outlier identifying algorithms in Mathematica"](https://github.com/antononcube/MathematicaForPrediction/blob/master/OutlierIdentifiers.m),
+(2013),
+[MathematicaForPrediction at GitHub](https://github.com/antononcube/MathematicaForPrediction).
+
+[AAp2] Anton Antonov,
+[OutlierIdentifiers R-package](https://github.com/antononcube/R-packages/tree/master/OutlierIdentifiers),
+(2019),
+[R-packages at GitHub/antononcube](https://github.com/antononcube/R-packages).
