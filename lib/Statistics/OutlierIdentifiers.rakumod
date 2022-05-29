@@ -67,7 +67,7 @@ sub splus-quartile-identifier-parameters(@data) is export {
     } else {
         my @res = quartiles(@data);
         $xL = @res[0];
-        $xU = @res[1];
+        $xU = @res[2];
     }
 
     return ($xL - 1.5 * ($xU - $xL), $xU + 1.5 * ($xU - $xL));
